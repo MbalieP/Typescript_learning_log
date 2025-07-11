@@ -37,7 +37,6 @@ function completeOrder(orderId: number){
     const order = orderQueue.find(order => order.id === orderId)
     if (!order){
         console.error(`${orderId} was not found in the orderQueue`)
-        throw new Error
         return
     }
     order.status = "completed"
