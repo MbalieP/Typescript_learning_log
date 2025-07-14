@@ -26,7 +26,7 @@ let nextOrderId: number = 1
 const orderQueue: Order[] = []
 
 
-function addNewPizza(pizzaObj: Pizza){
+function addNewPizza(pizzaObj: Pizza): void{
     menu.push(pizzaObj)
 }
 function placeOrder(pizzaName: string){
@@ -48,7 +48,7 @@ function completeOrder(orderId: number){
     order.status = "completed"
     return order
 }
-function getPizzaDetail(identifier: string | number){
+function getPizzaDetail(identifier: string | number) : Pizza | undefined{
     if(typeof identifier === "string"){
         return menu.find(pizza => pizza.name.toLowerCase === identifier.toLowerCase)
     }else if(typeof identifier === "number"){
