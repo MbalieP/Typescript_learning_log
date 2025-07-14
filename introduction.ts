@@ -14,6 +14,11 @@ type Indentifier ={
 
 }   
 
+let cashInRegister = 100
+let nextOrderId: number = 1
+let nextPizzaId = 1
+
+
 
 const menu:Pizza[] = [
     {id: 1,name: "morazarella", price: 8 },
@@ -21,10 +26,7 @@ const menu:Pizza[] = [
     {id: 3,name: "veggie", price: 12},
     {id: 4,name: "hawaiian", price: 14}
 ]
-let cashInRegister = 100
-let nextOrderId: number = 1
 const orderQueue: Order[] = []
-
 
 function addNewPizza(pizzaObj: Pizza): void{
     menu.push(pizzaObj)
