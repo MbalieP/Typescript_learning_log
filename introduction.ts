@@ -21,10 +21,10 @@ let nextPizzaId = 1
 
 
 const menu:Pizza[] = [
-    {id: 1,name: "morazarella", price: 8 },
-    {id: 2,name: "pepperoni", price: 10},
-    {id: 3,name: "veggie", price: 12},
-    {id: 4,name: "hawaiian", price: 14}
+    {id: nextPizzaId++,name: "morazarella", price: 8 },
+    {id: nextPizzaId++,name: "pepperoni", price: 10},
+    {id: nextPizzaId++,name: "veggie", price: 12},
+    {id: nextPizzaId++,name: "hawaiian", price: 14}
 ]
 const orderQueue: Order[] = []
 
