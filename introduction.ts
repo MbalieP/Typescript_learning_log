@@ -1,19 +1,25 @@
 
 type Pizza = {
+    id: number
     name: string
     price: number
 }
 type Order = {
     id: number
     pizza: Pizza
-    status: String
+    status: "ordered" | "completed"
 
-}
-const menu = [
-    {name: "morazarella", price: 8 },
-    {name: "pepperoni", price: 10},
-    {name: "veggie", price: 12},
-    {name: "hawaiian", price: 14}
+} 
+type Indentifier ={
+
+}   
+
+
+const menu:Pizza[] = [
+    {id: 1,name: "morazarella", price: 8 },
+    {id: 2,name: "pepperoni", price: 10},
+    {id: 3,name: "veggie", price: 12},
+    {id: 4,name: "hawaiian", price: 14}
 ]
 let cashInRegister = 100
 let nextOrderId: number = 1
@@ -29,7 +35,7 @@ function placeOrder(pizzaName: string){
         console.error(`${pizzaName} does not exist in the menu`)
         return null};
     cashInRegister += selectedPizza.price
-    const newOrder = {id:nextOrderId++, pizza: selectedPizza, status : "ordered"};
+    const newOrder:Order = {id:nextOrderId++, pizza: selectedPizza, status : "ordered"};
     orderQueue.push(newOrder);
     return newOrder;  
 }
@@ -42,10 +48,19 @@ function completeOrder(orderId: number){
     order.status = "completed"
     return order
 }
+function getPizzaDetail(identifier: string | number){
+    if(typeof identifier === "string"){
+        return menu.find(pizza => pizza.name.toLowerCase === identifier.toLowerCase)
+    }else{
+        return menu.find(pizza =>pizza.id === identifier)
+    }
 
-addNewPizza({name:"chicken Bacon ranch", price:12})
-addNewPizza({name: "bbq chicken",price:12})
-addNewPizza({name: "four in one", price: 15})
+}
+
+
+addNewPizza({id:5,name:"chicken Bacon ranch", price:12})
+addNewPizza({id:6,name: "bbq chicken",price:12})
+addNewPizza({id:7,name: "four in one", price: 15})
 
 placeOrder("four in one")
 completeOrder(1)
