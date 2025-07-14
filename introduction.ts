@@ -16,7 +16,7 @@ type Indentifier ={
 
 let cashInRegister = 100
 let nextOrderId: number = 1
-let nextPizzaId = 1
+let nextPizzaId = 2
 
 
 
