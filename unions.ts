@@ -12,7 +12,7 @@ const user: User[] = [
     {username: "guest_user", role: "guest"},
 
 ];
-//
+
 
 function fetchUserDetails(username: string): User{
     const user = user.find(user => user.username === username)
