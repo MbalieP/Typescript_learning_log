@@ -3,7 +3,6 @@ type Address = {
     street: string
     city: string
     country:string
-    
     }
 
 // Define a type for a person, which may optionally include an address
