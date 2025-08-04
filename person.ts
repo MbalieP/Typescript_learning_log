@@ -35,6 +35,7 @@ let person2 : Person ={
     isStudent: false
     
 }
+
 let person3 : Person={
     name: "Mbali",
     surname: "Phulwane",
