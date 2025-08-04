@@ -50,4 +50,5 @@ let person3 : Person={
 }
 // An array to store multiple people (currently person1 and person2)
 let people: Person[] = [person1,person2]
+
 // Note: person3 is defined but not yet added to the array
