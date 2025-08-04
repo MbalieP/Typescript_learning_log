@@ -4,8 +4,6 @@ type Address = {
     city: string
     country:string
     }
-
-
 type Person={
     name: string
     surname: string
