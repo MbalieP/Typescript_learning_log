@@ -22,6 +22,7 @@ let person1 : Person = {
     age:43,
     isStudent: false,
     address:{
+        
         street: "Gilspie",
         
         city:"pretoria",
