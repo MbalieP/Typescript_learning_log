@@ -44,6 +44,7 @@ let person3 : Person={
     age: 27,
     isStudent: true,
     address:{
+        
         city: "pretoria",
         street: "koosPrinsloo",
         country: "Azania"
