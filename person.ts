@@ -23,6 +23,7 @@ let person1 : Person = {
     isStudent: false,
     address:{
         street: "Gilspie",
+        
         city:"pretoria",
         country:"south Africa"
     }
