@@ -13,10 +13,6 @@ type Person={
     isStudent: boolean
     address?: Address
 }
-
-
-
-
 let person1 : Person = {
     name: "joe",
     surname: "Doe",
