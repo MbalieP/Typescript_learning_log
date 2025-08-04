@@ -33,6 +33,7 @@ let person2 : Person ={
     surname: "jamea",
     age: 66,
     isStudent: false
+    
 }
 let person3 : Person={
     name: "Mbali",
