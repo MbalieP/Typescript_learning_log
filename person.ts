@@ -27,7 +27,7 @@ let person1 : Person = {
         country:"south Africa"
     }
 }
-
+// Create a person object without an address
 let person2 : Person ={
     name:"jill",
     surname: "jamea",
