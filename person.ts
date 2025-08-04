@@ -13,6 +13,7 @@ type Person={
     age: number  // Age in years
     isStudent: boolean  // Indicates if the person is a student
     address?: Address // Optional address field
+    
 }
 
 // Create a person object with full address
