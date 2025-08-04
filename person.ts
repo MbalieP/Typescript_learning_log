@@ -45,6 +45,6 @@ let person3 : Person={
         country: "Azania"
     }
 }
-
+// An array to store multiple people (currently person1 and person2)
 let people: Person[] = [person1,person2]
 
