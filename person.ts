@@ -11,7 +11,7 @@ type Person={
     name: string // First name of the person
     surname: string  // Last name of the person
     age: number  // Age in years
-    isStudent: boolean
+    isStudent: boolean  // Indicates if the person is a student
     address?: Address
 }
 let person1 : Person = {
