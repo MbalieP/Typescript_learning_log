@@ -9,7 +9,7 @@ type Address = {
 // Define a type for a person, which may optionally include an address
 type Person={
     name: string // First name of the person
-    surname: string
+    surname: string  // Last name of the person
     age: number
     isStudent: boolean
     address?: Address
