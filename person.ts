@@ -5,7 +5,6 @@ type Address = {
     country:string
     }
 
-
 // Define a type for a person, which may optionally include an address
 type Person={
     name: string // First name of the person
