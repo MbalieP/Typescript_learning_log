@@ -1,4 +1,4 @@
-
+// Define a type for an address with street, city, and country
 type Address = {
     street: string
     city: string
