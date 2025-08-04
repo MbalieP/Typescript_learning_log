@@ -10,7 +10,7 @@ type Address = {
 type Person={
     name: string // First name of the person
     surname: string  // Last name of the person
-    age: number
+    age: number  // Age in years
     isStudent: boolean
     address?: Address
 }
