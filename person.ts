@@ -14,6 +14,8 @@ type Person={
     isStudent: boolean  // Indicates if the person is a student
     address?: Address // Optional address field
 }
+
+// Create a person object with full address
 let person1 : Person = {
     name: "joe",
     surname: "Doe",
